@@ -56,7 +56,7 @@ public class WandController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (throwing)
+        if (throwing && throwable != null)
         {
             Transform origin;
             if (trackedObj.origin != null)
