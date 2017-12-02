@@ -108,7 +108,7 @@ public class WandController : MonoBehaviour
             if (pickupable.GetComponent<Rigidbody>() == null)
             {
                 var fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
-                var tMesh = fabricator.GetComponent<TextMesh>();
+                var tMesh = fabricator.TDtext.GetComponent<TextMesh>();
                 var rest = int.Parse(tMesh.text);
                 if (rest == 0)
                     return;
@@ -119,7 +119,7 @@ public class WandController : MonoBehaviour
 
                 pickupable = Instantiate(fabricator.Fabricator);
                 fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
-                tMesh = fabricator.GetComponent<TextMesh>();
+                tMesh = fabricator.TDtext.GetComponent<TextMesh>();
 
                 tMesh.text = (rest).ToString();
 
