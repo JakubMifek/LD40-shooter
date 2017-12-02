@@ -10,6 +10,7 @@ public class WandController : MonoBehaviour
     private SteamVR_Controller.Device Controller { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
 
     public float rotateSpeed = 0.25f;
+    public float mass = 1.0f;
 
     private Valve.VR.EVRButtonId trigger = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
     public bool triggerUp = false;
@@ -111,7 +112,8 @@ public class WandController : MonoBehaviour
                 pickupable = Instantiate(fabricator.Fabricator);
                 pickupable.transform.localPosition = position;
                 pickupable.transform.localScale = size;
-                pickupable.AddComponent<Rigidbody>();
+                var body = pickupable.AddComponent<Rigidbody>();
+                body.mass = mass;
             }
 
             fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();
