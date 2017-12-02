@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33330997257480554}
   - component: {fileID: 23668004857888054}
   - component: {fileID: 65404514810743312}
+  - component: {fileID: 114291280308300244}
   m_Layer: 0
   m_Name: Bomb projectile
   m_TagString: Pickupable
@@ -95,3 +96,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114291280308300244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1383898628394568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa67737067aedd4e98cf4c48874ff54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fabricator: {fileID: 1383898628394568}
