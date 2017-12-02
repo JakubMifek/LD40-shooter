@@ -75,6 +75,7 @@ public class WandController : MonoBehaviour
             }
 
             throwable.maxAngularVelocity = throwable.velocity.magnitude;
+            throwing = false;
         }
     }
 
