@@ -15,12 +15,12 @@ public class WandController : MonoBehaviour
     public bool triggerUp = false;
     public bool triggerDown = false;
     public bool triggerPressed = false;
-
-    private GameObject pickupable;
+    
+    public   GameObject pickupable;
     private FixedJoint fJoint;
 
     private bool throwing;
-    private Rigidbody throwable;
+    public Rigidbody throwable;
 
     // Use this for initialization
     void Start()
@@ -47,7 +47,7 @@ public class WandController : MonoBehaviour
             PickUpObject();
         }
 
-        if (triggerUp)
+        if (triggerUp)  
         {
             DropObject();
         }
@@ -83,8 +83,7 @@ public class WandController : MonoBehaviour
     {
         if (other.tag == "Pickupable")
         {
-            var instance = Instantiate(other.gameObject);
-            pickupable = instance;
+            pickupable = other.gameObject;
         }
     }
 
@@ -104,7 +103,15 @@ public class WandController : MonoBehaviour
     {
         if (pickupable != null)
         {
-            fJoint.connectedBody = gameObject.GetComponent<Rigidbody>();
+            var fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
+            var position = pickupable.transform.position;
+            var size = pickupable.transform.lossyScale;
+            pickupable = Instantiate(fabricator.Fabricator);
+            pickupable.transform.localPosition = position;
+            pickupable.transform.localScale = size;
+            pickupable.AddComponent<Rigidbody>();
+
+            fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();
             throwing = false;
             throwable = null;
         }
