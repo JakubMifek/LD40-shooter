@@ -83,7 +83,8 @@ public class WandController : MonoBehaviour
     {
         if (other.tag == "Pickupable")
         {
-            pickupable = other.gameObject;
+            var instance = Instantiate(other.gameObject);
+            pickupable = instance;
         }
     }
 
