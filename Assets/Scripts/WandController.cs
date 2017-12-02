@@ -10,7 +10,6 @@ public class WandController : MonoBehaviour
     private SteamVR_Controller.Device Controller { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
 
     public float rotateSpeed = 0.25f;
-    public float mass = 1.0f;
 
     private Valve.VR.EVRButtonId trigger = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
     public bool triggerUp = false;
@@ -64,20 +63,22 @@ public class WandController : MonoBehaviour
             else
                 origin = trackedObj.transform.parent;
 
+            float slow = throwable.mass * throwable.mass;
+
             if (origin != null)
             {
-                throwable.velocity = origin.TransformVector(Controller.velocity);
-                throwable.angularVelocity = origin.TransformVector(Controller.angularVelocity * rotateSpeed);
+                throwable.velocity = origin.TransformVector(Controller.velocity / slow);
+                throwable.angularVelocity = origin.TransformVector(Controller.angularVelocity * rotateSpeed / slow);
             }
             else
             {
-                throwable.velocity = (Controller.velocity);
-                throwable.angularVelocity = (Controller.angularVelocity * rotateSpeed);
+                throwable.velocity = (Controller.velocity / slow);
+                throwable.angularVelocity = (Controller.angularVelocity * rotateSpeed / slow);
             }
 
             throwable.maxAngularVelocity = throwable.velocity.magnitude;
-            throwing = false;
         }
+        throwing = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -112,8 +113,6 @@ public class WandController : MonoBehaviour
                 pickupable = Instantiate(fabricator.Fabricator);
                 pickupable.transform.localPosition = position;
                 pickupable.transform.localScale = size;
-                var body = pickupable.AddComponent<Rigidbody>();
-                body.mass = mass;
             }
 
             fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();

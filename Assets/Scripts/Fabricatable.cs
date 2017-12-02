@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class Fabricatable : MonoBehaviour {
     public GameObject Fabricator;
+    public int bonus;
 }
