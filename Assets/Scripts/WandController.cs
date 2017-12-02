@@ -80,7 +80,7 @@ public class WandController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "pickupable")
+        if (other.tag == "Pickupable")
         {
             pickupable = other.gameObject;
         }
