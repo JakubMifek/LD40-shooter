@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fabricatable : MonoBehaviour {
+[RequireComponent(typeof(TextMesh))]
+public class Fabricatable : MonoBehaviour
+{
     public GameObject Fabricator;
+    public GameObject TDtext;
     public int bonus;
 }

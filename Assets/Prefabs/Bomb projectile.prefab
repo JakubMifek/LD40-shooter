@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 23989994695269586}
   - component: {fileID: 102033983988282708}
   m_Layer: 0
-  m_Name: New Text (1)
+  m_Name: Bomb text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1849203043917502}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.3, y: -0.2, z: -0}
-  m_LocalScale: {x: 0.4000003, y: 0.40000015, z: 0.5000006}
+  m_LocalPosition: {x: -0.4, y: 0.4, z: -0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 4971846509436576}
   m_RootOrder: 0
@@ -210,4 +210,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fabricator: {fileID: 1873972467616998}
+  TDtext: {fileID: 1849203043917502}
   bonus: 0
