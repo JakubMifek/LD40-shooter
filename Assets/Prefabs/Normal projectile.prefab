@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4372518639929458}
   - component: {fileID: 33304902571096922}
   - component: {fileID: 23382496820019480}
-  - component: {fileID: 114505897262467530}
+  - component: {fileID: 114982201614832676}
   - component: {fileID: 65917345286864400}
   - component: {fileID: 114724781514981980}
   - component: {fileID: 114809015422328516}
@@ -281,21 +281,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &114505897262467530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1007250087288828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3ca65057eb5c0f458960d002224295e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bonus: 0
-  radius: 5
-  force: 2
-  throwClip: {fileID: 8300000, guid: c66984b642a451543bbf6cecc0f9ae00, type: 3}
 --- !u!114 &114724781514981980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,3 +308,16 @@ MonoBehaviour:
   Fabricator: {fileID: 1007250087288828}
   TDtext: {fileID: 1128087761108708}
   bonus: 100
+--- !u!114 &114982201614832676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007250087288828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ccd7cd8f4618c43a3965b8a8dfa636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonus: 0
+  throwClip: {fileID: 8300000, guid: c66984b642a451543bbf6cecc0f9ae00, type: 3}
