@@ -293,11 +293,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d7e24410ac8c7849858e9c7c12c582b, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1054371948 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4551149606554982, guid: 1d7e24410ac8c7849858e9c7c12c582b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1054371947}
 --- !u!20 &1054371949 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20168300265654810, guid: 1d7e24410ac8c7849858e9c7c12c582b,
@@ -363,7 +358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945325439
 GameObject:
@@ -389,13 +384,13 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945325439}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.666669}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -30.000004, y: 0, z: -0.0000035762787}
   m_LocalScale: {x: 0.0063091484, y: 0.0063091484, z: 0.0063091484}
   m_Children:
   - {fileID: 1958691590}
-  m_Father: {fileID: 1054371948}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -449,7 +444,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1054371949}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 30
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
