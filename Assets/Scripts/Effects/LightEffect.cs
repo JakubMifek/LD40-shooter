@@ -34,13 +34,14 @@ public class LightEffect : ThrownEffect
             return;
 
         thrown = false;
-        StartCoroutine(PlaySoundAndDestroy());
+        //StartCoroutine(PlaySoundAndDestroy());
+        PlaySoundAndDestroy();
     }
 
-    private IEnumerator PlaySoundAndDestroy()
+    private void PlaySoundAndDestroy()
     {
         source.PlayOneShot(hitClip, 1.0f);
-        yield return new WaitForSeconds(hitClip.length);
+        //yield return new WaitForSeconds(hitClip.length);
         //Destroy(gameObject);
     }
 }
