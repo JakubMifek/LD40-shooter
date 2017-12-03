@@ -470,6 +470,7 @@ MonoBehaviour:
   triggerPressed: 0
   pickupable: {fileID: 0}
   throwable: {fileID: 0}
+  effect: {fileID: 0}
 --- !u!135 &173349410
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -553,6 +554,7 @@ MonoBehaviour:
   triggerPressed: 0
   pickupable: {fileID: 0}
   throwable: {fileID: 0}
+  effect: {fileID: 0}
 --- !u!135 &210778844
 SphereCollider:
   m_ObjectHideFlags: 0
