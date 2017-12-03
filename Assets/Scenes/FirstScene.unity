@@ -2377,12 +2377,12 @@ TextMesh:
   m_GameObject: {fileID: 1038412677}
   m_Text: 'Score: 0'
   m_OffsetZ: 0
-  m_CharacterSize: 10
+  m_CharacterSize: 0.5
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 160
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
