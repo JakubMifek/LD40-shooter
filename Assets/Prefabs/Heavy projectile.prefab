@@ -294,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 0}
   score: 0
+  clip: {fileID: 0}
 --- !u!114 &114075206741944782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,3 +323,4 @@ MonoBehaviour:
   bonus: 0
   throwClip: {fileID: 8300000, guid: c66984b642a451543bbf6cecc0f9ae00, type: 3}
   hitClip: {fileID: 8300000, guid: f3aebff15a2971c49bac005a7bc5bc9b, type: 3}
+  mess: {fileID: 1148603708499820, guid: 0b4b51ce73da1544190e99bbec86d857, type: 2}

@@ -7,6 +7,7 @@ public class HeavyEffect : ThrownEffect
 {
     public AudioClip throwClip;
     public AudioClip hitClip;
+    public GameObject mess;
 
     private Rigidbody body;
     private Collider col;
@@ -41,6 +42,11 @@ public class HeavyEffect : ThrownEffect
     private void PlaySoundAndDestroy()
     {
         source.PlayOneShot(hitClip, 1.0f);
+        if (transform.position.y > 5)
+        {
+            Instantiate(mess, transform.position, Quaternion.identity);
+        }
+
         //yield return new WaitForSeconds(hitClip.length);
         //Destroy(gameObject);
     }
