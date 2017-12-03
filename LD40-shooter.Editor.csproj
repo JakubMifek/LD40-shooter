@@ -328,12 +328,12 @@
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Editor\DepthOfFieldEditor.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Editor\ScreenSpaceReflectionEditor.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Editor\TonemappingColorGradingEditor.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_Editor.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_Preferences.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_Settings.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_SkyboxEditor.cs" />
-    <Compile Include="Assets\Scripts\SteamVR\Editor\SteamVR_Update.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_Settings.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_SkyboxEditor.cs" />
+    <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Materials\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
@@ -427,17 +427,17 @@
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-    <None Include="Assets\Scripts\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
-    <None Include="Assets\Scripts\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
-    <None Include="Assets\Scripts\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
-    <None Include="Assets\Scripts\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
-    <None Include="Assets\Scripts\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
-    <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_AlphaOut.shader" />
-    <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_ClearAll.shader" />
-    <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_ColorOut.shader" />
-    <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_Fade.shader" />
-    <None Include="Assets\Scripts\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
-    <None Include="Assets\Scripts\SteamVR\readme.txt" />
+    <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+    <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+    <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+    <None Include="Assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+    <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+    <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+    <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+    <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
+    <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
+    <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+    <None Include="Assets\SteamVR\readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

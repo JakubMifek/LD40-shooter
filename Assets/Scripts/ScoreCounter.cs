@@ -6,7 +6,7 @@ using UnityEngine;
 public class ScoreCounter : MonoBehaviour
 {
     private TextMesh mesh;
-    
+
     private int _score;
     public int Score
     {
@@ -25,11 +25,5 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<TextMesh>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
