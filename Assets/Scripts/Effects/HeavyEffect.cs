@@ -33,7 +33,7 @@ public class HeavyEffect : ThrownEffect
         if (!thrown)
             return;
 
-        thrown = false;
+        //thrown = false;
         //StartCoroutine(PlaySoundAndDestroy());
         PlaySoundAndDestroy();
     }

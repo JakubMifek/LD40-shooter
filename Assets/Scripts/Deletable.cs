@@ -35,7 +35,7 @@ public class Deletable : MonoBehaviour
 
     IEnumerator PlaySoundAndDestroy()
     {
-        source.PlayOneShot(clip, 1.0f);
+        source.PlayOneShot(clip, 0.1f);
         yield return new WaitForSeconds(clip.length);
         Destroy(gameObject);
     }
