@@ -321,10 +321,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Editor\DepthOfFieldEditor.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Editor\ScreenSpaceReflectionEditor.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Editor\TonemappingColorGradingEditor.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
     <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
@@ -333,6 +333,8 @@
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Materials\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
+    <None Include="Assets\Materials\PyroParticles\Readme.txt" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\BokehSplatting.shader" />
@@ -420,8 +422,6 @@
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-    <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
-    <None Include="Assets\PyroParticles\Readme.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />

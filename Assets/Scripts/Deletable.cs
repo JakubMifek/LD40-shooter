@@ -9,11 +9,14 @@ public class Deletable : MonoBehaviour
     private Rigidbody rb;
     public ScoreCounter sc;
     public int score;
+    private AudioSource source;
+    public AudioClip clip;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,10 +24,20 @@ public class Deletable : MonoBehaviour
     {
         if (rb.transform.position.y < 0)
         {
-            if(sc != null)
+            if (sc != null)
                 sc.Score += score;
 
-            Destroy(gameObject);
+            if (source != null && clip != null)
+                StartCoroutine(PlaySoundAndDestroy());
+            else Destroy(gameObject);
         }
     }
+
+    IEnumerator PlaySoundAndDestroy()
+    {
+        source.PlayOneShot(clip, 1.0f);
+        yield return new WaitForSeconds(clip.length);
+        Destroy(gameObject);
+    }
+
 }

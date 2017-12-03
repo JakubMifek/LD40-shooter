@@ -234,6 +234,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Materials\PyroParticles\Demo\DemoScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Demo\DemoScriptEditor.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireLightScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+    <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\AntiAliasing.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\ImageEffectHelper.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\Common\RenderTexureUtility.cs" />
@@ -278,15 +287,6 @@
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
-    <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
-    <Compile Include="Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
-    <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
     <Compile Include="Assets\Scripts\Data.cs" />
     <Compile Include="Assets\Scripts\Deletable.cs" />
     <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
@@ -402,6 +402,8 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Materials\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
+    <None Include="Assets\Materials\PyroParticles\Readme.txt" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\BokehSplatting.shader" />
@@ -489,8 +491,6 @@
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-    <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
-    <None Include="Assets\PyroParticles\Readme.txt" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />

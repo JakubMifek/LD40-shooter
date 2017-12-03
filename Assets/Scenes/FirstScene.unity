@@ -335,6 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &165396908
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 200
+  clip: {fileID: 0}
 --- !u!1 &173349408 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 124034, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -774,6 +776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &339056344
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &339876146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 200
+  clip: {fileID: 0}
 --- !u!1 &371020879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1129,7 @@ GameObject:
   - component: {fileID: 427956874}
   - component: {fileID: 427956879}
   - component: {fileID: 427956878}
+  - component: {fileID: 427956880}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1225,6 +1231,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 2000
+  clip: {fileID: 8300000, guid: 64f1672153d6ea74d9801a1c7c84accd, type: 3}
+--- !u!82 &427956880
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427956873}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &464303266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &496836186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +1541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 200
+  clip: {fileID: 0}
 --- !u!1 &527338266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 200
+  clip: {fileID: 0}
 --- !u!1 &531286609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &678474445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1001 &695608856
 Prefab:
   m_ObjectHideFlags: 0
@@ -2033,6 +2125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1001 &784919065
 Prefab:
   m_ObjectHideFlags: 0
@@ -2236,6 +2329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &892808415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &1038412677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,6 +2656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &1159693058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,6 +2814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &1238324507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,6 +3242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1 &1456042614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,6 +3357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1001 &1470030613
 Prefab:
   m_ObjectHideFlags: 0
@@ -3582,6 +3681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!1001 &1808944092
 Prefab:
   m_ObjectHideFlags: 0
@@ -3789,6 +3889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sc: {fileID: 1038412681}
   score: 100
+  clip: {fileID: 0}
 --- !u!43 &1858772425
 Mesh:
   m_ObjectHideFlags: 0
