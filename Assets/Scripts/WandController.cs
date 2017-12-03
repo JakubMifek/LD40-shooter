@@ -63,7 +63,7 @@ public class WandController : MonoBehaviour
             else
                 origin = trackedObj.transform.parent;
 
-            float slow = (float)Math.Sqrt(throwable.mass);
+            float slow = (float)Math.Pow(throwable.mass, 1.0/3.0);
 
             if (origin != null)
             {
