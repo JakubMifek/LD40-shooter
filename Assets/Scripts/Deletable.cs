@@ -11,6 +11,7 @@ public class Deletable : MonoBehaviour
     public int score;
     private AudioSource source;
     public AudioClip clip;
+    private bool deleted = false;
 
     // Use this for initialization
     void Start()
@@ -22,8 +23,10 @@ public class Deletable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rb.transform.position.y < 0)
+        if (rb.transform.position.y < 0 && !deleted)
         {
+            deleted = true;
+
             if (sc != null)
                 sc.Score += score;
 
