@@ -135,7 +135,8 @@ public class WandController : MonoBehaviour
 
             fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();
             effect = pickupable.GetComponent<ThrownEffect>();
-            effect.bonus = fabricator.bonus;
+            if (effect != null)
+                effect.bonus = fabricator.bonus;
             throwing = false;
             throwable = null;
         }
