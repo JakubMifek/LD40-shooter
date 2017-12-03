@@ -67,7 +67,6 @@ public class WandController : MonoBehaviour
             float slow = (float)Math.Pow(throwable.mass, 1.0 / 3.0);
             if (effect != null)
             {
-                effect.bonus = 100;
                 effect.Throw();
                 effect = null;
             }
@@ -112,9 +111,9 @@ public class WandController : MonoBehaviour
     {
         if (pickupable != null)
         {
+            var fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
             if (pickupable.GetComponent<Rigidbody>() == null)
             {
-                var fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
                 var tMesh = fabricator.TDtext.GetComponent<TextMesh>();
                 var rest = int.Parse(tMesh.text);
                 if (rest == 0)
@@ -136,6 +135,7 @@ public class WandController : MonoBehaviour
 
             fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();
             effect = pickupable.GetComponent<ThrownEffect>();
+            effect.bonus = fabricator.bonus;
             throwing = false;
             throwable = null;
         }

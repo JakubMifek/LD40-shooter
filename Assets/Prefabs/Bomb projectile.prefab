@@ -295,7 +295,7 @@ MonoBehaviour:
   bonus: 0
   radius: 5
   force: 2
-  explosion: {fileID: 0}
+  explosion: {fileID: 1371389870241730, guid: f445194c9b368114ab04c7bc78dd9268, type: 2}
   explosionClip: {fileID: 8300000, guid: 31dbe1f047a081845bd95a5b256ee829, type: 3}
   throwClip: {fileID: 8300000, guid: da5aeec65dfce4d449024607b399a5ec, type: 3}
 --- !u!114 &114782100579610704

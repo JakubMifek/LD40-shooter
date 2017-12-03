@@ -25,6 +25,7 @@ public class Explosion : ThrownEffect
     private void Start()
     {
         col = GetComponent<Collider>();
+        source = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collision)

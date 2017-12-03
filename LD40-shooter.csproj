@@ -290,6 +290,8 @@
     <Compile Include="Assets\Scripts\Data.cs" />
     <Compile Include="Assets\Scripts\Deletable.cs" />
     <Compile Include="Assets\Scripts\Effects\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Effects\HeavyEffect.cs" />
+    <Compile Include="Assets\Scripts\Effects\LightEffect.cs" />
     <Compile Include="Assets\Scripts\Effects\ThrownEffect.cs" />
     <Compile Include="Assets\Scripts\Fabricatable.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
