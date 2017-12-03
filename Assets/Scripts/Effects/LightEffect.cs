@@ -7,6 +7,7 @@ public class LightEffect : ThrownEffect
 {
     public AudioClip throwClip;
     public AudioClip hitClip;
+    public GameObject mess;
 
     private Rigidbody body;
     private Collider col;
@@ -41,6 +42,9 @@ public class LightEffect : ThrownEffect
     private void PlaySoundAndDestroy()
     {
         source.PlayOneShot(hitClip, 1.0f);
+        if (transform.position.y > 13)
+            Instantiate(mess, transform.position, Quaternion.identity);
+
         //yield return new WaitForSeconds(hitClip.length);
         //Destroy(gameObject);
     }
