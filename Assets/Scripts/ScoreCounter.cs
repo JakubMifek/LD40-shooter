@@ -7,16 +7,16 @@ public class ScoreCounter : MonoBehaviour
 {
     private TextMesh mesh;
 
+    public HighScore score;
+
     private int _score;
     public int Score
     {
         get { return _score; }
         set
         {
-            var last = _score;
             _score = value;
 
-            HighScore.AddPoints(_score - last);
             mesh.text = "Score: " + _score;
         }
     }
@@ -25,5 +25,10 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<TextMesh>();
+    }
+
+    private void OnDestroy()
+    {
+        score.AddScore(Score);
     }
 }

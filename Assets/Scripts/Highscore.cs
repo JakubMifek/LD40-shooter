@@ -28,27 +28,19 @@ public static class StringExtensions
 
 public class HighScore : MonoBehaviour
 {
-    public static int score;
-
     public static int[] scores;
 
     public static int highscore;
     public static int minscore;
-
-    public static Text text;
-
+    
     void Start()
     {
-        text = GetComponent<Text>();
-
-        score = 0;
-
         scores = PlayerPrefs.GetString("highscore", "0;0;0;0;0;0;0;0;0;0").ToIntArray();
         highscore = scores.Max();
         minscore = scores.Min();
     }
 
-    void Update()
+    public void AddScore(int score)
     {
         if (score > minscore)
         {
@@ -67,18 +59,5 @@ public class HighScore : MonoBehaviour
 
             PlayerPrefs.SetString("highscore", scores.ToStringRep());
         }
-
-
-        text.text = "" + score;
-    }
-
-    public static void AddPoints(int pointsToAdd)
-    {
-        score += pointsToAdd;
-    }
-
-    public static void Reset()
-    {
-        score = 0;
     }
 }
