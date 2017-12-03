@@ -2115,6 +2115,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54642079784121142, guid: 1cc0cf24ad939814d9640471b00fdf9f, type: 2}
+    - {fileID: 114724781514981980, guid: 1cc0cf24ad939814d9640471b00fdf9f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1cc0cf24ad939814d9640471b00fdf9f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &813446709
@@ -3001,7 +3002,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3013,7 +3014,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3025,7 +3026,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &1401948487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3459,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54216811228047512, guid: 706f16d13dbc2b44da0bece3094a78bc, type: 2}
+    - {fileID: 114888326913397888, guid: 706f16d13dbc2b44da0bece3094a78bc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 706f16d13dbc2b44da0bece3094a78bc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1714365988
@@ -3662,6 +3664,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54858002100428322, guid: edf07bc3515fb154d8829289e07741dd, type: 2}
+    - {fileID: 114051842564082666, guid: edf07bc3515fb154d8829289e07741dd, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: edf07bc3515fb154d8829289e07741dd, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1853009185

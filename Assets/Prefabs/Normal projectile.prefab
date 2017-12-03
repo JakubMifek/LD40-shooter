@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33304902571096922}
   - component: {fileID: 23382496820019480}
   - component: {fileID: 65917345286864400}
+  - component: {fileID: 114724781514981980}
   - component: {fileID: 114809015422328516}
   - component: {fileID: 54642079784121142}
   m_Layer: 0
@@ -198,6 +199,19 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &114724781514981980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007250087288828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sc: {fileID: 0}
+  score: 0
 --- !u!114 &114809015422328516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,4 +225,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fabricator: {fileID: 1007250087288828}
   TDtext: {fileID: 1128087761108708}
-  bonus: 0
+  bonus: 100
