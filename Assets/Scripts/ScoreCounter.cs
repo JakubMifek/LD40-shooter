@@ -6,14 +6,17 @@ using UnityEngine;
 public class ScoreCounter : MonoBehaviour
 {
     private TextMesh mesh;
-
+    
     private int _score;
     public int Score
     {
         get { return _score; }
         set
         {
+            var last = _score;
             _score = value;
+
+            HighScore.AddPoints(_score - last);
             mesh.text = "Score: " + _score;
         }
     }
