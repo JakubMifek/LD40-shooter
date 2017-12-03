@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heavy : MonoBehaviour {
+[RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(AudioSource))]
+public class HeavyEffect : ThrownEffect
+{
+    private AudioSource source;
+    public AudioClip throwClip;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private Rigidbody body;
+
+    public override void Throw()
+    {
+        source.PlayOneShot(throwClip, 1.0f);
+        body.mass += bonus;
+    }
+
+    private void Start()
+    {
+        body = GetComponent<Rigidbody>();
+        source = GetComponent<AudioSource>();
+    }
 }

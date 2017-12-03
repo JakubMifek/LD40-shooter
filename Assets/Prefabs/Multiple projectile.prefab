@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4731047394391064}
   - component: {fileID: 33702145144921590}
   - component: {fileID: 23478680123720874}
+  - component: {fileID: 114337248470303776}
   - component: {fileID: 65190064308919270}
   - component: {fileID: 114051842564082666}
   - component: {fileID: 114075206741944782}
@@ -307,3 +308,16 @@ MonoBehaviour:
   Fabricator: {fileID: 1861349226948040}
   TDtext: {fileID: 1647321970835642}
   bonus: 100
+--- !u!114 &114337248470303776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861349226948040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953e1a57f9b4b3442b65f41a08ecc85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonus: 0
+  throwClip: {fileID: 8300000, guid: 1e61113ff2ec2a7498f9f38807addc04, type: 3}
