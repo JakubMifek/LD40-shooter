@@ -304,6 +304,15 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/jakub/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="GETween">
+      <HintPath>Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
+    </Reference>
+    <Reference Include="2D Sky FREE">
+      <HintPath>Assets/Prefabs/2D Sky FREE/Demo/Scripts/2D Sky FREE.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -316,6 +325,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="LD40-shooter.csproj">
+      <Project>{04B0FC99-8555-1A74-4106-31973383654B}</Project>
+      <Name>LD40-shooter</Name>
+    </ProjectReference>
+    <ProjectReference Include="LD40-shooter.unityproj">
       <Project>{04B0FC99-8555-1A74-4106-31973383654B}</Project>
       <Name>LD40-shooter</Name>
     </ProjectReference>
@@ -333,8 +346,13 @@
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Materials\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
     <None Include="Assets\Materials\PyroParticles\Readme.txt" />
+    <None Include="Assets\Prefabs\2D Sky FREE\Demo\Scripts\Note.txt" />
+    <None Include="Assets\Prefabs\2D Sky FREE\Readme.txt" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />
     <None Include="Assets\Prefabs\Table and chair\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\BokehSplatting.shader" />
