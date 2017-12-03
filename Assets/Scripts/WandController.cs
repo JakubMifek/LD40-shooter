@@ -21,6 +21,7 @@ public class WandController : MonoBehaviour
 
     private bool throwing;
     public Rigidbody throwable;
+    public ThrownEffect effect;
 
     // Use this for initialization
     void Start()
@@ -63,7 +64,13 @@ public class WandController : MonoBehaviour
             else
                 origin = trackedObj.transform.parent;
 
-            float slow = (float)Math.Pow(throwable.mass, 1.0/3.0);
+            float slow = (float)Math.Pow(throwable.mass, 1.0 / 3.0);
+            if (effect != null)
+            {
+                effect.bonus = 100;
+                effect.Throw();
+                effect = null;
+            }
 
             if (origin != null)
             {
@@ -128,6 +135,7 @@ public class WandController : MonoBehaviour
             }
 
             fJoint.connectedBody = pickupable.GetComponent<Rigidbody>();
+            effect = pickupable.GetComponent<ThrownEffect>();
             throwing = false;
             throwable = null;
         }
