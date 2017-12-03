@@ -184,6 +184,9 @@
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+    </Reference>
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
@@ -304,12 +307,6 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/jakub/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="GETween">
-      <HintPath>Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
-    </Reference>
-    <Reference Include="GUIAnimatorFREE">
-      <HintPath>Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
-    </Reference>
     <Reference Include="2D Sky FREE">
       <HintPath>Assets/Prefabs/2D Sky FREE/Demo/Scripts/2D Sky FREE.dll</HintPath>
     </Reference>
@@ -328,10 +325,6 @@
       <Project>{04B0FC99-8555-1A74-4106-31973383654B}</Project>
       <Name>LD40-shooter</Name>
     </ProjectReference>
-    <ProjectReference Include="LD40-shooter.unityproj">
-      <Project>{04B0FC99-8555-1A74-4106-31973383654B}</Project>
-      <Name>LD40-shooter</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Materials\PyroParticles\Prefab\Editor\PyroParticlesEditor.cs" />
@@ -346,9 +339,6 @@
     <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\GE Common Assets\Readme.txt" />
-    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
-    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
     <None Include="Assets\Materials\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
     <None Include="Assets\Materials\PyroParticles\Readme.txt" />
     <None Include="Assets\Prefabs\2D Sky FREE\Demo\Scripts\Note.txt" />
