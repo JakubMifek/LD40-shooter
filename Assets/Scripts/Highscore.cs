@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public static class StringExtensions
 {
@@ -40,14 +41,30 @@ public class HighScore : MonoBehaviour
         scores = PlayerPrefs.GetString("highscore", "0;0;0;0;0;0;0;0;0;0").ToIntArray();
         highscore = scores.Max();
         minscore = scores.Min();
+        localScore = PlayerPrefs.GetInt("lastScore", 0);
+
+        SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
     }
 
-    private void OnApplicationQuit()
+    private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
     {
-        if (PlayerPrefs.GetInt("scoreable", 0) == 1)
-            AddFinalScore(localScore);
+        Debug.Log("scene change");
+        if(PlayerPrefs.GetInt("scoreable", 0) == 1)
+        {
+            Debug.Log("scoreable == 1");
+            if (arg1.name == "Menu")
+            {
+                Debug.Log("menu");
+                AddFinalScore(localScore);
+                PlayerPrefs.SetInt("lastScore", 0);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("lastScore", localScore);
+            }
+        }
     }
-    
+
     public void AddScore(int score)
     {
         localScore += score;
@@ -61,6 +78,7 @@ public class HighScore : MonoBehaviour
 
     public void AddFinalScore(int score)
     {
+        Debug.Log("scoring");
         if (score > minscore)
         {
             minscore = score;

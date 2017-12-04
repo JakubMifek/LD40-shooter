@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelSwitch : MonoBehaviour {
+public class LevelSwitch : MonoBehaviour
+{
 
     public string level;
 
@@ -14,11 +16,15 @@ public class LevelSwitch : MonoBehaviour {
 
     public void Switch()
     {
-        if (level != "Ranked")
-            PlayerPrefs.SetInt("scoreable", 0);
-        else
-            PlayerPrefs.SetInt("scoreable", 1);
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            Debug.Log("menu was on");
+            if (level != "Ranked")
+                PlayerPrefs.SetInt("scoreable", 0);
+            else
+                PlayerPrefs.SetInt("scoreable", 1);
+        }
 
-        UnityEngine.SceneManagement.SceneManager.LoadScene(level);
+        SceneManager.LoadScene(level);
     }
 }
