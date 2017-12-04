@@ -26,7 +26,7 @@ public class LevelSwitch : MonoBehaviour
             else
             {
                 PlayerPrefs.SetInt("scoreable", 1);
-                level = "Level 1";
+                level = "Level 0";
             }
         }
 
