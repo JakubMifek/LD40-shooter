@@ -225,8 +225,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Materials\PyroParticles\Demo\DemoScript.cs" />
-    <Compile Include="Assets\Materials\PyroParticles\Demo\DemoScriptEditor.cs" />
     <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireBaseScript.cs" />
     <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
     <Compile Include="Assets\Materials\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
