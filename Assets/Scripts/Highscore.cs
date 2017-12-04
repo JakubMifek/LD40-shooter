@@ -49,7 +49,7 @@ public class HighScore : MonoBehaviour
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
     {
         Debug.Log("scene change");
-        if(PlayerPrefs.GetInt("scoreable", 0) == 1)
+        if (PlayerPrefs.GetInt("scoreable", 0) == 1)
         {
             Debug.Log("scoreable == 1");
             if (arg1.name == "Menu")
@@ -74,6 +74,14 @@ public class HighScore : MonoBehaviour
     public void Clear()
     {
         localScore = 0;
+    }
+
+    public void Reset()
+    {
+        for (int i = 0; i < scores.Length; i++)
+            scores[i] = 0;
+
+        PlayerPrefs.SetString("highscore", scores.ToStringRep());
     }
 
     public void AddFinalScore(int score)
