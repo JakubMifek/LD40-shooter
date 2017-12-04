@@ -41,7 +41,7 @@ public class WandController : MonoBehaviour
 
     private void Controller_PadClicked(object sender, ClickedEventArgs e)
     {
-        if (info == null) return;
+        if (info == null || info.targetsDestroyed != info.targets) return;
 
         levelSwitch.level = "Menu";
 

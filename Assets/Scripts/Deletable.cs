@@ -12,6 +12,7 @@ public class Deletable : MonoBehaviour
     private AudioSource source;
     public AudioClip clip;
     private bool deleted = false;
+    public LevelInfo info;
 
     // Use this for initialization
     void Start()
@@ -41,6 +42,8 @@ public class Deletable : MonoBehaviour
         source.PlayOneShot(clip, 0.1f);
         yield return new WaitForSeconds(clip.length);
         Destroy(gameObject);
+        if (info != null)
+            info.targetsDestroyed++;
     }
 
 }

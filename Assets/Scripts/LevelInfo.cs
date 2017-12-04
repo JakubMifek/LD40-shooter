@@ -4,4 +4,6 @@ using UnityEngine;
 
 public class LevelInfo : MonoBehaviour {
     public string nextLevel;
+    public int targets;
+    public int targetsDestroyed;
 }

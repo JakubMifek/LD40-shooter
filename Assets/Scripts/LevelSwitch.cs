@@ -20,9 +20,14 @@ public class LevelSwitch : MonoBehaviour
         {
             Debug.Log("menu was on");
             if (level != "Ranked")
+            {
                 PlayerPrefs.SetInt("scoreable", 0);
+            }
             else
+            {
                 PlayerPrefs.SetInt("scoreable", 1);
+                level = "Level 1";
+            }
         }
 
         SceneManager.LoadScene(level);
