@@ -34,16 +34,18 @@ public class HighScore : MonoBehaviour
     public int highscore;
     public int minscore;
     private int localScore;
-    public int LocalScore { get { return localScore; } set { } }
+    public int LocalScore { get { return started ? localScore : PlayerPrefs.GetInt("lastScore", 0); } set { } }
+    private bool started;
 
     void Start()
     {
         scores = PlayerPrefs.GetString("highscore", "0;0;0;0;0;0;0;0;0;0").ToIntArray();
         highscore = scores.Max();
         minscore = scores.Min();
-        localScore = PlayerPrefs.GetInt("lastScore", 0);
-
         SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+        Debug.Log("Setting localscore");
+        localScore = PlayerPrefs.GetInt("lastScore", 0);
+        started = true;
     }
 
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)

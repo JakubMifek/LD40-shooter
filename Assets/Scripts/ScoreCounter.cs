@@ -27,5 +27,7 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<TextMesh>();
+        Debug.Log("Setting score: " + score.LocalScore);
+        Score = score.LocalScore;
     }
 }
