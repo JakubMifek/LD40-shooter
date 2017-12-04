@@ -149,9 +149,12 @@ public class WandController : MonoBehaviour
                 tMesh.text = (rest - 1).ToString();
                 var position = pickupable.transform.position;
                 var size = pickupable.transform.lossyScale;
+                fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
+                var bonus = fabricator.bonus;
 
                 pickupable = Instantiate(fabricator.Fabricator);
                 fabricator = (Fabricatable)(pickupable.GetComponent("Fabricatable"));
+                fabricator.bonus = bonus;
                 tMesh = fabricator.TDtext.GetComponent<TextMesh>();
 
                 tMesh.text = (rest).ToString();
