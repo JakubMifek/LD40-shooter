@@ -48,6 +48,11 @@ public class HighScore : MonoBehaviour
         started = true;
     }
 
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("lastScore", 0);
+    }
+
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
     {
         Debug.Log("scene change");
