@@ -286,6 +286,7 @@
     <Compile Include="Assets\Scripts\Effects\ThrownEffect.cs" />
     <Compile Include="Assets\Scripts\Fabricatable.cs" />
     <Compile Include="Assets\Scripts\HighScore.cs" />
+    <Compile Include="Assets\Scripts\LevelInfo.cs" />
     <Compile Include="Assets\Scripts\LevelSwitch.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\ScoreBinder.cs" />

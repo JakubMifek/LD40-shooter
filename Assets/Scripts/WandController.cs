@@ -25,6 +25,7 @@ public class WandController : MonoBehaviour
     private bool throwing;
     public Rigidbody throwable;
     public ThrownEffect effect;
+    public LevelInfo info;
 
     // Use this for initialization
     void Start()
@@ -35,6 +36,19 @@ public class WandController : MonoBehaviour
         levelSwitch = GetComponent<LevelSwitch>();
 
         controller.MenuButtonClicked += Controller_MenuButtonClicked;
+        controller.PadClicked += Controller_PadClicked;
+    }
+
+    private void Controller_PadClicked(object sender, ClickedEventArgs e)
+    {
+        if (info == null) return;
+
+        levelSwitch.level = "Menu";
+
+        if (PlayerPrefs.GetInt("scoreable", 0) == 1)
+            levelSwitch.level = info.nextLevel;
+
+        levelSwitch.Switch();
     }
 
     private void Controller_MenuButtonClicked(object sender, ClickedEventArgs e)
