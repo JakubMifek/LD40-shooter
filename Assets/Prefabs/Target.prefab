@@ -147,7 +147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1221889879672346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 39, z: -7}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4238132562155050}
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 2
   clip: {fileID: 0}
   info: {fileID: 0}
@@ -644,10 +644,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 20
   clip: {fileID: 8300000, guid: 64f1672153d6ea74d9801a1c7c84accd, type: 3}
-  info: {fileID: 0}
+  info: {fileID: 114329957167997544, guid: a34246f24001e9949980e3b5b70ad7cc, type: 2}
 --- !u!114 &114374020412199496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 2
   clip: {fileID: 0}
   info: {fileID: 0}
@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 2
   clip: {fileID: 0}
   info: {fileID: 0}
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 2
   clip: {fileID: 0}
   info: {fileID: 0}

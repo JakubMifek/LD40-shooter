@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46450beb7b918434f9e6df41e229af8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114508145726378878, guid: 30b109754fb05724d9bb52b5d09e2a7b, type: 2}
   score: 1
   clip: {fileID: 0}
   info: {fileID: 0}
