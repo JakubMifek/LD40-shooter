@@ -19,6 +19,7 @@ public class LevelSwitch : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Menu")
         {
             Debug.Log("menu was on");
+            PlayerPrefs.SetInt("lastScore", 0);
             if (level != "Ranked")
             {
                 PlayerPrefs.SetInt("scoreable", 0);
