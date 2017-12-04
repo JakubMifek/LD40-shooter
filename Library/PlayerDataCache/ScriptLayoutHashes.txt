@@ -1,4 +1,4 @@
-WindowsStandalone
+WebGL
 94d66fcc029f3d76d1d23d64b29c0644 Assembly-CSharp.dll:.SteamVR_Ears
 36a7733bb9c78b502e99fac4e1ba5c26 Assembly-CSharp.dll:Valve.VR.InteractionSystem.LinearAnimation
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.DestroyOnParticleSystemDeath
@@ -250,7 +250,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-9ef3588cd1f392814a16dd48ff341e87 Assembly-CSharp.dll:.Deletable
+49f1305c97ba5cae385a8539403afb48 Assembly-CSharp.dll:.Deletable
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Valve.VR.InteractionSystem.ArrowheadRotation
 67af8340ec9c081c037c8aa5c753ce0a Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.ColorCorrectionRamp
 4cf1ceae9881e3ae26ab45745f3aa417 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.Grayscale
