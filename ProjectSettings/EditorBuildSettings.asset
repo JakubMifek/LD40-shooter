@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 5.unity
     guid: 787ee07769f53944681a8a1329ae2f96
+  - enabled: 1
+    path: Assets/Scenes/Secret level.unity
+    guid: 3e33c9f83396d2641af4e5d5b0d5826a
