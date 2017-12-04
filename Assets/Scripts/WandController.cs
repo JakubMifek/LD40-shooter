@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(FixedJoint)), RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(FixedJoint)), RequireComponent(typeof(Collider)), RequireComponent(typeof(SteamVR_TrackedController)), RequireComponent(typeof(LevelSwitch))]
 public class WandController : MonoBehaviour
 {
+    private LevelSwitch levelSwitch;
+
     private SteamVR_TrackedObject trackedObj;
     private SteamVR_Controller.Device Controller { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
+    private SteamVR_TrackedController controller;
 
     public float rotateSpeed = 0.25f;
 
@@ -28,6 +31,16 @@ public class WandController : MonoBehaviour
     {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
         fJoint = GetComponent<FixedJoint>();
+        controller = GetComponent<SteamVR_TrackedController>();
+        levelSwitch = GetComponent<LevelSwitch>();
+
+        controller.MenuButtonClicked += Controller_MenuButtonClicked;
+    }
+
+    private void Controller_MenuButtonClicked(object sender, ClickedEventArgs e)
+    {
+        levelSwitch.level = "Menu";
+        levelSwitch.Switch();
     }
 
     // Update is called once per frame

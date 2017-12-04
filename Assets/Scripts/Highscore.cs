@@ -28,11 +28,13 @@ public static class StringExtensions
 
 public class HighScore : MonoBehaviour
 {
-    public static int[] scores;
+    public int[] scores;
 
-    public static int highscore;
-    public static int minscore;
-    
+    public int highscore;
+    public int minscore;
+    private int localScore;
+    public int LocalScore { get { return localScore; } set { } }
+
     void Start()
     {
         scores = PlayerPrefs.GetString("highscore", "0;0;0;0;0;0;0;0;0;0").ToIntArray();
@@ -40,7 +42,24 @@ public class HighScore : MonoBehaviour
         minscore = scores.Min();
     }
 
+    private void OnApplicationQuit()
+    {
+        if (PlayerPrefs.GetInt("scoreable", 0) == 1)
+            AddFinalScore(localScore);
+    }
+    
     public void AddScore(int score)
+    {
+        localScore += score;
+        Debug.Log("Score: " + localScore);
+    }
+
+    public void Clear()
+    {
+        localScore = 0;
+    }
+
+    public void AddFinalScore(int score)
     {
         if (score > minscore)
         {

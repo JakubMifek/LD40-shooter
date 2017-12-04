@@ -15,8 +15,10 @@ public class ScoreCounter : MonoBehaviour
         get { return _score; }
         set
         {
+            var last = _score;
             _score = value;
 
+            score.AddScore(_score - last);
             mesh.text = "Score: " + _score;
         }
     }
@@ -25,10 +27,5 @@ public class ScoreCounter : MonoBehaviour
     void Start()
     {
         mesh = GetComponent<TextMesh>();
-    }
-
-    private void OnDestroy()
-    {
-        score.AddScore(Score);
     }
 }

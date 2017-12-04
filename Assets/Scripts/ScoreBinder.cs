@@ -7,6 +7,7 @@ public class ScoreBinder : MonoBehaviour
 {
 
     public int index;
+    public HighScore hs;
 
     private TextMesh mesh;
 
@@ -18,6 +19,6 @@ public class ScoreBinder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mesh.text = HighScore.scores[index].ToString();
+        mesh.text = hs.scores[index].ToString();
     }
 }
